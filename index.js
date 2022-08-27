@@ -10,7 +10,7 @@ var utils = require('./utils');
 module.exports = function(cache, defaults){
   var self = this;
   var supportedMethods = ['GET', 'HEAD', 'POST', 'PUT', 'PATCH', 'DELETE'];
-  var cacheableMethods = ['GET', 'HEAD'];
+  var cacheableMethods = ['GET', 'HEAD', 'POST'];
   this.cache = cache;
   this.defaults = defaults || {};
 
